@@ -1,0 +1,27 @@
+_____Briefing_____
+Final Project
+1. requirements: ML application, algorithms learned/unlearned are accepted
+2. tips: case studies and/or projects can be combined and/or reused as a final project
+
+THREE Components of the Final Project
+A. Report (03/03/2023)
+Structure & Contents: ???
+
+B. Codes (due: 27/03/2023)
+
+C. Presentation/PPT (due: 05/03/2023)
+1. Each member will be allocated a part to present
+2. time duration: 10 mins per group (including Q/A)
+
+_____Things to do_____
+Select topic: ML application (due: 25/02/2023)
+Suggestions:
+1. Recommendation System: Build a model to recommend products or services to users based on their preferences and behavior.
+books, movies, etc. 
+2. Stock Price Prediction: Build a model that can predict the future prices of stocks based on historical data. You can use financial data, such as stock prices and trading volume, to train your model.
+3. Customer Segmentation: Develop a model to segment customers based on their behavior, demographics, or purchase history.
+4. Image Classification: Build a model that can recognize and classify images. You can use a dataset of images, such as the MNIST dataset, to train your model.
+5. Sentiment Analysis: Develop a model that can analyze the sentiment of a piece of text and classify it as positive, negative, or neutral.
+6. Chatbot: Develop a chatbot that can understand natural language queries and provide appropriate responses.
+7. Speech Recognition: Develop a model to transcribe speech into text or to recognize spoken commands.
+8. Text Generation: Build a model that can generate new text based on a given prompt or seed text.

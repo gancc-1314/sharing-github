@@ -1,0 +1,4 @@
+Work Division
+1.  Introduction (State Problem, Work Flow) + Conclusion --> Gui Wen
+2. Collect & Preprocess Data, Extract Relevant Features --> Cindy
+3. Explain the model: algorithms 4. Model evaluation --> Fion, Cloudy

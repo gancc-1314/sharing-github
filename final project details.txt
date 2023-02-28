@@ -1,0 +1,63 @@
+Final Project: Movie Recommendation System
+Reference: 
+https://towardsdatascience.com/how-to-build-a-movie-recommendation-system-67e321339109
+
+
+What Are Recommendation Systems?
+Recommender systems encompass a class of techniques and algorithms that can suggest 'relevant' items to users. It can predict future behavior based on past data through a multitude of techniques including matrix factorization.
+For instance, YouTube recommends new videos to you, Facebook recommends new friends to you, and Amazon recommends similar products to you are the applications of recommender systems.
+
+
+Why Do We Need Recommendation Systems?
+Standpoint of Normal People:
+Living in the era of abundance, people are surrounded by thousands of options every second they survive. Recommenders system play the role of assisting people to approach their 'desirable' options by personalizing a platform to help the users find something they may like efficiently.
+The easier and simplest way to do this is to recommend the most popular items. However, to really enhance the user satisfactory through personalized recommendations, we need dedicated and sophisticated recommender systems  .
+
+Standpoint of Business:
+The more relevant products a user finds on the platform, the higher their engagement. This often results in increased revenue for the platform itself. Various sources say that as much as 35–40% of tech giants’ revenue comes from recommendations alone.
+
+
+Types of Recommender Systems
+For recommender systems, typically, there are TWO types of machine learning algorithms applied, which are content-based algorithm and collaborative filtering algorithm. Modern recommender systems combine both algorithms to process its work. Let's us take a look at how they work using movie recommendation system (MRS) as a base.
+A) Content-Based MRS
+With content-based algorithm, this type of MRS is based on the similarity of movie attributes. Using content-based MRS, if  a user watches one movie, similar movies are recommended. The attributes of movies include genre, actor, tag, and so on. Armed with this knowledge, we are sure that the input for building a content-based MRS is movie attributes.
+
+B) Collaborative Filtering MRS
+With collaborative filtering algorithm, this type of MRS is based on past interactions between users and movies. Armed with this information, the input for a collaborative filtering MRS is made up of past data of user interactions with the movies they have watched.
+
+
+The Dataset
+open-source MovieLens dataset:
+https://grouplens.org/datasets/movielens/
+
+
+Designing a Movie Recommendation System
+To obtain recommendations for our users, we will predict their ratings for movies they haven’t watched yet. Movies are then indexed and suggested to users based on these predicted ratings.
+To do this, we will use past records of movies and user ratings to predict their future ratings. At this point, it’s worth mentioning that in the real world, we will likely encounter new users or movies without a history. Such situations are called cold start problems. Let’s take a brief look at how cold start problems can be addressed.
+
+Cold Start Problems
+Cold start problems can be handled by recommendations based on meta-information, such as:
+For new users, we can use their location, age, gender, browser, and user device to predict recommendations.
+For new movies, we can use genre, cast, and crew to recommend it to target users.
+
+
+Implementation
+Algorithms used: content-based, collaborative filtering
+Tools:
+content-based: cosine similarity function --> find similarity
+collaborative filtering: matrix factorization technique -->
+
+To begin with, first to do is creating a matrix factorization based model. We'll use the output of this model and a few handcrafted feaetures to provide inputs to the final model. The process will look like below:
+Step 1: Build a Matrix Factorization-Based Model
+Step 2: Creating Handcrafted Features
+Step 3: Implement Final Model
+
+Matrix Factorization-Based Algorithm
+Matrix factorization algorithms work by decomposing the user-movie interaction matrix into the product of two lower dimensionality rectangular matrices, say U and M. The decomposition is done in such a way that the product results in almost similar values to the user-movie interaction matrix. Here, U represents the user matrix, M represents the movie matrix, n is the number of users, and m is the number of movies.
+Each row of the user matrix represents a user and each column of the movie matrix represents a movie.
+Once we obtain the U and M matrices, based on the non-empty cells in the user-movie interaction matrix, we perform the product of U and M and predict the values of non-empty cells in the user-movie interaction matrix.
+To implement matrix factorization, we use a simple Python library named Surprise, which is for building and testing recommender systems. The data frame is converted into a train set, a format of data set to be accepted by the Surprise library.
+
+
+Performance Metrics
+
